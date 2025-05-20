@@ -1,0 +1,14 @@
+rules:
+  packageManager:
+    enforce: bun
+    allow: [bun]
+    deny: [npm, yarn, pnpm]
+  dependencies:
+    required:
+      - trpc
+      - tailwindcss
+      - shadcn/ui
+  usage:
+    api: trpc
+    styling: tailwindcss
+    ui: shadcn/ui
